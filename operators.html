@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Local Operators | Discover Albania</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Discover <span>Albania</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="planner.html">Trip Planner</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="operators.html">For Operators</a></li>
+      </ul>
+      <div id="auth-status"><button id="login-btn" class="cta-btn">Login</button></div>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Partner With Us</h2>
+      <p>Local operators, guides, and experience providers — apply to list your offerings</p>
+    </div>
+    <form id="operator-form" class="operator-form">
+      <div class="form-group"><label>Business / Guide Name</label><input type="text" required></div>
+      <div class="form-group"><label>Contact Email</label><input type="email" required></div>
+      <div class="form-group"><label>Phone / WhatsApp</label><input type="tel"></div>
+      <div class="form-group"><label>Location(s)</label><input type="text" placeholder="e.g. Himarë, Theth, Berat"></div>
+      <div class="form-group"><label>Type of Experiences</label>
+        <textarea placeholder="Describe the experiences you offer (boat trips, hiking, cultural tours, wine tasting, etc.)" required></textarea>
+      </div>
+      <div class="form-group"><label>Website or Social Media (optional)</label><input type="url"></div>
+      <button type="submit" class="btn primary large">Submit Application</button>
+    </form>
+    <div id="operator-success" class="hidden" style="text-align:center; margin-top:2rem;">
+      <h3>Application Received!</h3>
+      <p>Thank you. Our team will review your application and contact you within a few days.</p>
+    </div>
+  </section>
+
+  <footer><p>&copy; 2026 Discover Albania</p></footer>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

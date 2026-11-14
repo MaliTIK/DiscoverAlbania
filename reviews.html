@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Discover Albania</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Discover <span>Albania</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="planner.html">Trip Planner</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="operators.html">For Operators</a></li>
+      </ul>
+      <div id="auth-status"><button id="login-btn" class="cta-btn">Login</button></div>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <section class="section dark">
+    <div class="section-header">
+      <h2>Traveler Reviews</h2>
+      <p>Sign in to share your experience</p>
+    </div>
+    <div id="review-form" class="hidden">
+      <form id="new-review">
+        <textarea id="review-text" placeholder="Share your Albania experience..." required></textarea>
+        <select id="review-rating">
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+        </select>
+        <button type="submit" class="btn primary">Submit Review</button>
+      </form>
+    </div>
+    <div id="reviews-list" class="testimonials">
+      <div class="testimonial"><p>“The Riviera is stunning, but the mountains completely surprised us.”</p><strong>— Sarah, UK ★★★★★</strong></div>
+      <div class="testimonial"><p>“Berat felt like stepping back in time. Highly recommend local guides.”</p><strong>— Luca, Italy ★★★★★</strong></div>
+    </div>
+  </section>
+
+  <footer><p>&copy; 2026 Discover Albania</p></footer>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

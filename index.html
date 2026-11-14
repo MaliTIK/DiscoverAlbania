@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Albania | Authentic Experiences & Trip Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Discover <span>Albania</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="planner.html">Trip Planner</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="operators.html">For Operators</a></li>
+      </ul>
+      <div id="auth-status">
+        <button id="login-btn" class="cta-btn">Login</button>
+        <span id="user-info" class="hidden"></span>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Europe’s Best-Kept Secret</span>
+      <h1>Experience the Real Albania</h1>
+      <p>Beaches, mountains, UNESCO towns, and authentic local adventures. Plan your perfect trip and book directly with local experts.</p>
+      <div class="hero-buttons">
+        <a href="planner.html" class="btn primary">Build My Itinerary</a>
+        <a href="experiences.html" class="btn secondary">Browse Experiences</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Featured Destinations</h2>
+      <a href="destinations.html" class="btn secondary">View All</a>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card large">
+        <img src="E6HnK.jpg" alt="Albanian Riviera">
+        <div class="dest-overlay"><h3>Albanian Riviera</h3><p>Ksamil, Himarë, Dhërmi</p></div>
+      </div>
+      <div class="dest-card">
+        <img src="WbhCz.jpg" alt="Albanian Alps">
+        <div class="dest-overlay"><h3>Albanian Alps</h3><p>Theth to Valbonë</p></div>
+      </div>
+      <div class="dest-card">
+        <img src="vGmZU.jpg" alt="Berat">
+        <div class="dest-overlay"><h3>Berat</h3><p>UNESCO Town</p></div>
+      </div>
+      <div class="dest-card">
+        <img src="QmwcM.jpg" alt="Blue Eye">
+        <div class="dest-overlay"><h3>Blue Eye</h3><p>Syri i Kaltër</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><p>&copy; 2026 Discover Albania. <a href="operators.html">Partner with us</a></p></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
